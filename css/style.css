@@ -66,3 +66,7 @@ body {
     border-width: .5rem .5rem 0 .5rem;
     border-color: #444 transparent transparent transparent;
 }
+
+td, th {
+    padding: 1px 4px;
+  }
