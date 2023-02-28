@@ -1,6 +1,6 @@
 class BarChart {
 
-    constructor(_config, _data, _title, _xLabel, _yLabel, _font_size) {
+    constructor(_config, _data, _title, _xLabel, _yLabel, _font_size, _link) {
         this.config = {
             parentElement: _config.parentElement,
             containerWidth: _config.containerWidth || 500,
@@ -12,7 +12,8 @@ class BarChart {
         this.xLabel = _xLabel;
         this.yLabel = _yLabel;
         this.font_size = _font_size;
-
+        this.link = _link;
+        
         // Call a class function
         this.initVis();
     }
@@ -61,7 +62,10 @@ class BarChart {
             .attr("y", 75)
             .attr("text-anchor", "middle")
             .attr("font-size", "24px")
-            .text(vis.title);
+            .html("<a href=" + vis.link + " target='blank'>" + vis.title + "</a>")
+            .style("stroke", "purple")
+            .style("stroke-width", "1px")
+            .style("text-decoration", "underline");
 
         vis.g.append("g")
             .attr("transform", "translate(0," + vis.height + ")")

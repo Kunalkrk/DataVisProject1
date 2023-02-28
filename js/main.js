@@ -144,19 +144,19 @@ d3.csv('data/exoplanets.csv')
 		  'parentElement': '#barchart1',
 		  'containerHeight': 500,
 		  'containerWidth': 600
-	  }, numPlanetsPerStar, "No. of stars for each exo-planet", "No. of stars", "No. of exo-planets", 15);
+	  }, numPlanetsPerStar, "No. of stars for each exo-planet", "No. of stars", "No. of exo-planets", 15, "https://exoplanets.nasa.gov/what-is-an-exoplanet/stars/");
 
 	  let barCh2 = new BarChart({
 		  'parentElement': '#barchart2',
 		  'containerHeight': 500,
 		  'containerWidth': 600
-	  }, numPlanetsPerExoPlanet, "No. of planets for each exo-planet", "No. of planets", "No. of exo-planets", 15);
+	  }, numPlanetsPerExoPlanet, "No. of planets for each exo-planet", "No. of planets", "No. of exo-planets", 15, "https://exoplanets.nasa.gov/what-is-an-exoplanet/planet-types/overview/");
 
 	  let barCh4 = new BarChart({
 		  'parentElement': '#barchart4',
 		  'containerHeight': 500,
 		  'containerWidth': 600
-	  }, disc_methods, "No. of exo-planets for each discovery method", "Discovery Method", "No. of exo-planets", 8);
+	  }, disc_methods, "No. of exo-planets for each discovery method", "Discovery Method", "No. of exo-planets", 8, "https://en.wikipedia.org/wiki/Methods_of_detecting_exoplanets");
 
 	  // let lineCh = new LineChart({
 		//   'parentElement': '#linechart',
@@ -168,7 +168,7 @@ d3.csv('data/exoplanets.csv')
 		  'parentElement': '#scatterplot',
 		  'containerHeight': 500,
 		  'containerWidth': 600
-	  }, scatter_data, "Exo-planets Radius and Mass", "Radius", "Mass", 15);
+	  }, scatter_data, "Exo-planets Radius and Mass", "Radius", "Mass", 15, "https://iopscience.iop.org/article/10.1088/0004-637X/744/1/59");
 
 	//   let tablePlot = new table({
 	// 	'parentElement': '#table',
